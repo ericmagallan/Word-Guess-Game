@@ -1,22 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Hangman Game</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
 </head>
+
 <body>
+    <div class="container">
 
-    <!-- Creating a word-guess-game.
-1. Pick a random word.
-2. Take the player’s guess.
-3. Quit the game if the player wants to.
-4. Check that the player’s guess is a valid letter.
-5. Keep track of letters the player has guessed.
-6. Show the player their progress.
-7. Finish when the player has guessed the word. -->
+        <div class="jumbotron">
+            <h1 class="display-4">Wedd Well Hangman</h1>
+            <p class="lead">This is a simple game where the player tests their wedding knowledge and guess different
+                wedding day items.
+                <p>Don't lose or your vendors won't show up the day of the wedding!
+                    <p>It happens! X_x.</p>
 
-    
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Word To Guess</h3>
+            </div>
+            <div class="panel-body">
+                <h2>_ _ _ _ _ _ _ _</h2>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    Wrong Guesses: <span id="wrongGuesses"> 0</span>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    Guesses Left:<class id="guessesLeft"> 2</class>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    Win Counter:<class id="winCounter"> 2</class>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    Loss Counter:<class id="lossCounter"> 2</class>
+                </div>
+            </div>
+        </div>
 </body>
+
 </html>
