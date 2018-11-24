@@ -1,28 +1,33 @@
-$(document).ready(function () {
-//Create an answer array.
-//Create a game loop.
-//Prompt player for letter.
-//Show the player status.
-//
+// Global Variables
 
-// While a word has not been guess {
-//     Show the player their current progress
-//Get a guess from the player
-//}
-//If the player wants to quit the game {
-//Quit the game
-//}
+// ================================================================
+//Arrays and Variables for holding data
+var wordOptions = [" bride", "groom", "vows", "bouquet", "veil", "wedding ring", "boutonniere", "tissues"];
+var selectedWord = "";
+var lettersInWord = [];
+var numBlanks = 0;
+var blanksAndSuccesses = [];
+var wrongLetters = [];
 
-// //Else If {
-//     If the guess is not a single letter {
-//         Tell the player to pick a single letter
-//     }
-// }
-//Else {
-//     If the guess is in the word {
-//         Update the player's progress with the guess
-//     }
-// }
-// }
+//Game Counters
+var winCount = 0;
+var lossCount = 0;
+var guessesLeft = 9;
 
-//Congratulate the player on guessing the word.
+// Functions ()
+// ================================================================
+function startGame() {
+    selectedWord = wordOptions[Math.floor(Math.random() * wordOptions.length)];
+    lettersInWord = selectedWord.split("");
+    numBlanks = lettersInWord.length;
+
+    // Testing/Debugging
+    console.log(selectedWord);
+    console.log(lettersInWord);
+
+}
+
+// Main Process
+
+// ================================================================
+startGame();
