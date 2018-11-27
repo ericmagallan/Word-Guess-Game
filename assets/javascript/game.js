@@ -27,7 +27,9 @@ function startGame() {
     blanksAndSuccesses = [];
 
     // Populate blanks and successes with right number of blanks
-    for (var i=0; i=0 i = numBlanks)
+    for (var i=0; i=numBlanks; i++){
+    blanksAndSuccesses.push ("_");
+}
     
 
     // Testing/Debugging
