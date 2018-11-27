@@ -21,9 +21,22 @@ function startGame() {
     lettersInWord = selectedWord.split("");
     numBlanks = lettersInWord.length;
 
+    // Reset each round
+    guessesLeft = 9;
+    wrongLetters = [];
+    blanksAndSuccesses = [];
+
+    // Populate blanks and successes with right number of blanks
+    for (var i=0; i=0 i = numBlanks)
+    
+
     // Testing/Debugging
     console.log(selectedWord);
     console.log(lettersInWord);
+    console.log(numBlanks);
+    console.log(blanksAndSuccesses);
+
+    
 
 }
 
