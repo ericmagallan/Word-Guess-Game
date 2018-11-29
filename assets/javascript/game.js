@@ -12,7 +12,7 @@ var wrongLetters = [];
 //Game Counters
 var winCount = 0;
 var lossCount = 0;
-var guessesLeft = 9;
+var guessesLeft = 6;
 
 // Functions ()
 // ================================================================
@@ -27,10 +27,10 @@ function startGame() {
     blanksAndSuccesses = [];
 
     // Populate blanks and successes with right number of blanks
-    for (var i=0; i=numBlanks; i++){
-    blanksAndSuccesses.push ("_");
-}
-    
+    for (var i = 0; i = numBlanks; i++) {
+        blanksAndSuccesses.push("_");
+    }
+
 
     // Testing/Debugging
     console.log(selectedWord);
@@ -38,7 +38,7 @@ function startGame() {
     console.log(numBlanks);
     console.log(blanksAndSuccesses);
 
-    
+
 
 }
 
