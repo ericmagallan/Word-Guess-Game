@@ -3,7 +3,8 @@
 What the project does:
 This project is a word guess game called hangman created in Javascript, Html and CSS.
 
-Why the project is useful: It's to help develop my skills in Javascript and a fun way to pass the time.
+Why the project is useful: It's to help develop my skills in Javascript and a fun way to pass the time. Also it's a little surprise for my wife who is a wedding planner.
+The game essentially is a fun-filled game where the player will have to guess random items for a wedding day. If they don't guess correctly, then hypothetically, their wedding is ruined.
 
 How users can get started with the project: Start/Initialize the project by clicking on the github.io link.
 

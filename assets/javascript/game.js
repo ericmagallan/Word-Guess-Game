@@ -1,8 +1,7 @@
-alert("TEST");
-// Global Variables
+// Global Variables. Basically that will house some of the variables used within the game.
 
-// ================================================================
-//Arrays and Variables for holding data
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Arrays and Variables for holding data. Another area that will house more variables and lists for the game.
 var wordOptions = [" bride", "groom", "vows", "bouquet", "veil", "wedding ring", "boutonniere", "tissues"];
 var selectedWord = "";
 var lettersInWord = [];
@@ -15,8 +14,8 @@ var winCount = 0;
 var lossCount = 0;
 var guessesLeft = 6;
 
-// Functions ()
-// ================================================================
+// Essential Functions (Reusable code that will be utilized multiiple times throughout the game
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 function startGame() {
     selectedWord = wordOptions[Math.floor(Math.random() * wordOptions.length)];
     lettersInWord = selectedWord.split("");
@@ -43,7 +42,6 @@ function startGame() {
 
 }
 
-// Main Process
-
-// ================================================================
+// Main Process aka the nitty gritty
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 startGame();
